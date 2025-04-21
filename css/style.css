@@ -147,11 +147,10 @@ select:focus{
 .container{
 height: 100vh;
 margin: 15px;
-overflow: auto;
 width: 100%;
 }
 .content{
-    width: 100%;
+    width: 90%;
 }
 .heading{
     display: flex;
