@@ -1,6 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')  ;
 *{
-margin: 0;
-padding: 0;
-font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    user-select: none;
+}
+
+body{
+    background: linear-gradient(#E9E9FF, #C8C7FF);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--color-text);
+}
+
+:root{
+--color-primary: #5C56E1;
+--color-primary-dark: #5b21b6;
+--color-accent: #8B5CF6;
+--color-card: #FFFFFF;
+--color-input: #F1F1FF;
+--color-text: #09090E;
+--color-placeholder: #5C5A87;
+--color-border: #D4D4ED;
+--color-gradient: linear-gradient(135deg,#5C56E1, #8B5CF6);
+}
+
+
+.container{
+    background-color: var(--color-card);
+    color: var(--color-text);
+    border-radius: 12px;
+    overflow: hidden;
+    max-height: 1200px;
+    border-top: 5px solid var(--color-primary); 
+}
+.container .content{
+  width: 600px;
+  max-height: 1200px;
+  border-radius: 13px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading h3{
+    margin-right: 80px;
+    font-weight: 900;
+    font-size: 20px;
+}
+.magic_icon_button i{
+    background-color: var(--color-primary);
+    color: var(--color-card);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dark_white_toggle_btn i{
+    color: var(--color-text);
+    background-color: var(--color-border);
+    padding: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dark_white_toggle_btn i:hover,
+.dark_white_toggle_btn i:active{
+color: var(--color-accent);
+transition: all 0.6s ease;
+}
+
+
+.main{
+    margin-top: 30px;
+}
+.from #text_box{
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    resize: vertical;
+    border-radius: 15px;
+    background-color: var(--color-input);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+.from #text_box:focus{
+    outline: none;
+    border-radius: 15px;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.15);
+}
+.main .from #text_box::placeholder{
+    color: var(--color-placeholder);
+}
+
+.footer{
+    margin-top: 15px;
+}
+.selector{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.text_genr_btn{
+    background-color: var(--color-primary);
+    color: var(--color-card);
+    padding: 5px;
+    width: 110px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: capitalize;
+    align-items: center;
+    border: none;
+    margin-left: 40px;
+}
+.text_genr_btn i{
+    font-size: 10px;
+}
+select{
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--color-border);
+}
+select:focus{
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.15);
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width:640px) {
+.container{
+height: 100vh;
+margin: 15px;
+overflow: auto;
+width: 100%;
+}
+.content{
+    width: 100%;
+}
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h3{
+    width: 50%;
+}
+.footer{
+   width: 100%;
+}
+.selector{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+select{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+.text_genr_btn{
+    width: 100%;
+    text-align: center;
+    margin-left: -0px;
+}
+}
+
+@media screen and (max-width:540px){
+    .container{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .heading{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 85%;
+    }
+    
+    .main{
+       width: 100%;
+    }
+    .from{
+      width: 85%;
+       
+    }
+    #text_box{
+        margin-right: 90%;
+    }
+    .footer{
+        width: 100%;
+     }
+     .selector{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         width: 85%;
+     }
+    
 }
