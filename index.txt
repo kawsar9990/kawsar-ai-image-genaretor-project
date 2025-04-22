@@ -1,0 +1,62 @@
+<!--------magic Icon-------->
+  <i class="fa-solid fa-wand-magic-sparkles"></i>
+<!--------magic Icon-------->
+
+
+
+<!--------Logo-------->
+KAWSAR. AI Image Generator
+<!--------Logo-------->
+
+
+
+<!--------moon-------->
+ <i class="fa-solid fa-moon"></i>
+<!--------moon-------->
+
+<!--------dise-------->
+<i class="fa-solid fa-dice"></i>
+<!--------dise-------->
+
+
+
+
+<!--------genaret btn-------->                   
+<i class="fa-solid fa-wand-sparkles"></i> Generate
+<!--------genaret btn-------->
+
+
+
+
+
+
+
+
+                    <option value="Select model">Select Model</option>
+                    <option value="FLUX.1-dev">FLUX.1-dev</option>
+                    <option value="FLUX.1-schnell">FLUX.1-schnell</option>
+                    <option value="Stable Diffusion XL">Stable Diffusion XL</option>
+                    <option value="Stable Diffusion v1.5">Stable Diffusion v1.5</option>
+                    <option value="Stable Diffusion 3">Stable Diffusion 3</option>
+                    <option value="Openjourney">Openjourney</option>
+
+
+
+
+                    <option value="Image Count">Image Count</option>
+                    <option value="1 Image">1 Image</option>
+                    <option value="2 Image">2 Image</option>
+                    <option value="3 Image">3 Image</option>
+                    <option value="4 Image">4 Image</option>
+
+
+
+
+
+                     <option value="Aspect Ratio">Aspect Ratio</option>
+                    <option value="Square (1:1)">Square (1:1)</option>
+                    <option value="Landscape (16:9)">Landscape (16:9)</option>
+                    <option value="Portait (9:16)">Portait (9:16)</option>
+
+
+
