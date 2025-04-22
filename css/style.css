@@ -31,7 +31,7 @@ body{
 .container{
 width: 80%;
 background-color: var(--color-card);
-max-height: 700px;
+max-height: 900px;
 border-top: 5px solid var(--color-primary);
 border-radius: 7px;
 flex-direction: column;
@@ -189,6 +189,7 @@ cursor: pointer;
 
 img{
     width: 120px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width:640px) {
@@ -227,4 +228,27 @@ img{
             align-items: center;
             text-align: center;
         }
+}
+
+@media screen and (min-width:1024px){
+    .img_genaret{
+        margin-left: 0px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+.image_box{
+margin-left: 150px;
+}
+.button_box_gen{
+    margin-left: 150px;
+  }
+  .selector{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-left: 57px;
+    }
 }
